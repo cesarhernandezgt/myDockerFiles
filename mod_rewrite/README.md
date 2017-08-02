@@ -3,7 +3,10 @@ Docker file for building Centos 7 with Mod_rewrite enable.
 
 ## How to use the image
 * To run the container:
+
+        #src is the host folder containing your `.htaccess` and html files.
         docker run -d -p 8181:80 --name mod-rewrite-container -v "$PWD/src/":/var/www/html/ apache_mod_rewrite
+                
 * To inspect the container:
         docker exec -it mod-rewrite-container bash
 
