@@ -1,4 +1,5 @@
 # mod_rewrite
+Centos 7 with Mod_rewrite enable.
 
 ### To run the container
 `docker run -d -p 80:80 --name mod-rewrite-container -v "$PWD/src/":/var/www/html/ cesarhernandezgt/mod_rewrite`
